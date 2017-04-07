@@ -18,7 +18,7 @@ var colors = [
   '#FBE99D'
 ];
 
-<line-chart data="chartData" width="200" height="200" description="'description text'" colors="colors"></line-chart>
+<pie-chart data="chartData" width="200" height="200" description="'description text'" colors="colors"></pie-chart>
 ```
 
 ![demo.png](/demo.png "demo")
