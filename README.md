@@ -18,7 +18,7 @@ var colors = [
   '#FBE99D'
 ];
 
-<line-chart data="chartData" width="200" height="200" colors="colors"></line-chart>
+<line-chart data="chartData" width="200" height="200" description="'description text'" colors="colors"></line-chart>
 ```
 
 ![demo.png](/demo.png "demo")
