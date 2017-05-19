@@ -95,6 +95,20 @@ angular.module('pieChart', []).directive('pieChart', function ($filter) {
 				if (!angular.isArray(param)) {
 					param = [param, (1 - param), 0];
 				}
+				return isInitParam(param);
+			}
+
+			function isInitParam (param) {
+				var isInit = true;
+				for (var i = 0; i < param.length; i++) {
+					if (param[i] != 0) {
+						isInit = false;
+						break;
+					}
+				}
+				if (isInit) {
+					param[0] = 1;
+				}
 				return param;
 			}
 		}
