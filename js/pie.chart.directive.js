@@ -2,13 +2,13 @@ angular.module('pieChart', []).directive('pieChart', function ($filter) {
 	try {
 		return {
 			scope: {
-				'width': '=',
-				'height': '=',
+				'width': '=?',
+				'height': '=?',
 				'data': '=',
 				'description': '=',
 				'onClick': '&',
 				'accessor': '=',
-				'colors': '='
+				'colors': '=?'
 			},
 			restrict: 'E',
 			link: buildLink
