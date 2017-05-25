@@ -5,7 +5,7 @@ angular.module('pieChart', []).directive('pieChart', function ($filter) {
 				'width': '=?',
 				'height': '=?',
 				'data': '=',
-				'description': '=',
+				'description': '=?',
 				'onClick': '&',
 				'accessor': '=',
 				'colors': '=?'
